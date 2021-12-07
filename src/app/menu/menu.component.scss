@@ -1,0 +1,24 @@
+#dropdownHeader{
+    position: relative;
+    cursor: pointer;   // for keeping it alligned on same line
+ }
+ #dropdownBody{
+    position: absoulute // for keeping it aligned on same line
+  }
+//   .navbar .navbar-toggler {
+//    background: white !important;
+//  }
+// .navbar-toggle{
+//    border-color: grey !important;
+//    border-width: 1px !important;
+// border-style: solid !important;
+// }
+.dropdown-item{
+   color:#007bff;
+}
+.dropdown-item:focus{
+  background-color: #e9ecef;
+}
+.nav-link{
+  font-weight: bolder;
+}

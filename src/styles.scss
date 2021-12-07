@@ -1,0 +1,46 @@
+/* Importing Bootstrap SCSS file. */
+@import '~bootstrap/scss/bootstrap';
+
+body{
+    background-color:#F5F5F5;
+}
+.carousel-item {
+    display: block !important;
+    z-index: 1;
+    position: absolute;
+    opacity: 0;
+    transition: opacity 1.5s ease-in-out, visibility 1s;
+    visibility: hidden;
+}
+.carousel-item.active {
+    position: relative;
+    opacity: 1;        
+    transition: opacity 1.5s ease-in-out, visibility 1s;
+    visibility: visible;
+    
+}
+.texto-carousel{
+    color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight:bolder;
+    opacity: 0.75;
+    //  margin-bottom: 75px;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+
+}
+
+.cor-fundo-dropdown{
+    background-color: #404447 !important;
+}
+
+#dropdownBody{
+    margin-left: 5px;
+    padding-right: 7px;
+    padding-left: 7px;
+}
+
+p{
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    
+}

@@ -1,0 +1,38 @@
+<nav id="menu" class="navbar navbar-primary bg-dark navbar-expand-lg sticky-top">
+    <div class="container-fluid">
+      <a class="navbar-brand nav-link" routerLink="" style="color: white; font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; font-display: a;" (click)="isCollapsed = !isCollapsed">
+        <img src="/assets/logoTeste2.png" alt="" style="padding-right: 10px;">Link Soluções
+      </a>
+      <button
+        class="navbar-toggle navbar-toggler navbar-dark"
+        [attr.aria-expanded]="!isCollapsed" aria-controls="collapseBasic"
+        (click)="isCollapsed = !isCollapsed"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="collapseBasic" [collapse]="isCollapsed">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a routerLink="" class="nav-link" (click)="isCollapsed = !isCollapsed">Início</a>
+          </li>
+          <li class="nav-item">
+            <a routerLink="/sobre" class="nav-link" (click)="isCollapsed = !isCollapsed">Sobre</a>
+          </li>
+          <li id="dropdownHeader" class="nav-item" dropdown>         
+            <a id="basic-link" dropdownToggle aria-controls="dropdownBody" class="nav-link">Serviços</a>
+            <ul id="dropdownBody" *dropdownMenu class="dropdown-menu cor-fundo-dropdown"
+                role="menu" aria-labelledby="basic-link">
+              <li role="menuitem"><a class="dropdown-item nav-link" routerLink="/serviços/armazenagem" (click)="isCollapsed = !isCollapsed">Armazenagem </a></li>
+              <li role="menuitem"><a class="dropdown-item nav-link" routerLink="/serviços/transporte" (click)="isCollapsed = !isCollapsed">Transporte</a></li>
+              <li role="menuitem"><a class="dropdown-item nav-link" routerLink="/serviços/tecnologia" (click)="isCollapsed = !isCollapsed">Tecnologia</a></li>
+              <li role="menuitem"><a class="dropdown-item nav-link" routerLink="/serviços/operações" (click)="isCollapsed = !isCollapsed">Operações</a></li>
+            </ul>
+        </li>
+        <li class="nav-item">
+          <a routerLink="/contato" class="nav-link" (click)="isCollapsed = !isCollapsed">Contato</a>
+        </li>
+        </ul>
+      </div>
+
+    </div>
+  </nav>

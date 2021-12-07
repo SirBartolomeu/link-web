@@ -1,0 +1,60 @@
+<carousel>
+  <slide class="mx-auto">
+    <picture>
+      <source srcset="assets/armazem2000x400.png" media="(min-width: 1400px)"> <!-- ok -->
+      <source srcset="assets/armazem1400x400NEW.png" media="(min-width: 768px)"> <!-- ok -->
+      <source srcset="assets/armazem800x400.png" media="(min-width: 576px)"> <!-- ok -->
+      <img
+        srcset="assets/armazem600x400.png" 
+        alt="first slide"
+        class="d-block img-fluid"
+      /> <!-- ok -->
+      <div class="carousel-caption">
+        <h3 *ngIf="!isMobileLayout" class="texto-carousel pointer" routerLink="/serviços/armazenagem" style="font-size:xx-large;">Armazenagem</h3>
+        <h3 *ngIf="isMobileLayout" class="texto-carousel pointer" routerLink="/serviços/armazenagem" style="font-size:x-large;">Armazenagem</h3>
+      </div>
+    </picture>
+  </slide>
+  <slide class="mx-auto">
+    <picture>
+      <source srcset="assets/Carregamento2000x400.png" media="(min-width: 1400px)">
+      <!-- colocar todas resoluçãoes  600x400  800x400 1400x400 2000x400 na mesma altura, editar imagens-->
+      <source srcset="assets/Carregamento1400x400NEW.png" media="(min-width: 768px)">
+      <source srcset="assets/Carregamento800x400.png" media="(min-width: 576px)">
+      <img
+        srcset="assets/Carregamento600x400.png"
+        alt="second slide"
+        class="d-block img-fluid"
+      />
+      <div class="carousel-caption">
+        <h3 *ngIf="!isMobileLayout" class="texto-carousel pointer" routerLink="/serviços/transporte" style="font-size:xx-large;">Transporte</h3>
+        <h3 *ngIf="isMobileLayout" class="texto-carousel pointer" routerLink="/serviços/transporte" style="font-size:x-large;">Transporte</h3>
+      </div>
+    </picture>
+  </slide>
+  <slide class="mx-auto">
+    <picture>
+      <source srcset="assets/porto2000x400.png" media="(min-width: 1400px)">
+      <source srcset="assets/porto1400x400.png" media="(min-width: 768px)">
+      <source srcset="assets/porto800x400.png" media="(min-width: 576px)">
+      <img
+        srcset="assets/porto600x400.png"
+        alt="third slide"
+        class="d-block img-fluid"
+      />
+      <div class="carousel-caption">
+        <h3 *ngIf="!isMobileLayout" class="texto-carousel pointer" routerLink="/serviços/operações" style="font-size:xx-large;">Operação Portuária</h3>
+        <h3 *ngIf="isMobileLayout" class="texto-carousel pointer" routerLink="/serviços/operações" style="font-size:x-large;">Operação Portuária</h3>
+      </div>
+    </picture>
+  </slide>
+</carousel>
+
+
+<!-- Exemplo responsividade -->
+<!-- <picture>
+  <source srcset="https://dummyimage.com/2000x400/007aeb/4196e5" media="(min-width: 1400px)">
+  <source srcset="https://dummyimage.com/1400x400/007aeb/4196e5" media="(min-width: 768px)">
+  <source srcset="https://dummyimage.com/800x400/007aeb/4196e5" media="(min-width: 576px)">
+  <img srcset="https://dummyimage.com/600x400/007aeb/4196e5" alt="responsive image" class="d-block img-fluid">
+</picture> -->

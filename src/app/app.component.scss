@@ -1,0 +1,25 @@
+#corpo{
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+    padding: 10px;
+    position: relative;
+}
+#logo {
+    width: 30%;
+    min-width: 340px;
+    min-height: 100px;
+    object-fit:fill;
+}
+menu{
+    margin: 0 !important;
+    padding: 0 !important;
+position: -webkit-sticky;
+position: sticky;
+top: 0;
+z-index: 999;
+ }
+
+ #text-font{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+ }
