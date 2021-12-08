@@ -18,12 +18,14 @@ import { InicioComponent } from './inicio/inicio.component';
 import { MenuComponent } from './menu/menu.component';
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
     InicioComponent,
     MenuComponent,
-    CarouselInicialComponent
+    CarouselInicialComponent,
+
 
     
   ],

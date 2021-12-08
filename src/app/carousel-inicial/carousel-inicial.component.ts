@@ -9,8 +9,6 @@ import { CarouselConfig } from 'ngx-bootstrap/carousel';
 })
 export class CarouselInicialComponent {
 
-
-
   constructor() {}
 
   public isMobileLayout = this.isMobileAgent;
@@ -26,6 +24,6 @@ export class CarouselInicialComponent {
 
   }
 
-  
+
 
 }
